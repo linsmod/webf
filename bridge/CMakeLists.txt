@@ -275,6 +275,7 @@ if ($ENV{WEBF_JS_ENGINE} MATCHES "quickjs")
     core/dart_context_data.cc
     core/executing_context_data.cc
     core/fileapi/blob.cc
+    core/fileapi/array_buffer.cc
     core/fileapi/blob_part.cc
     core/fileapi/blob_property_bag.cc
     core/frame/console.cc
@@ -412,6 +413,7 @@ if ($ENV{WEBF_JS_ENGINE} MATCHES "quickjs")
     out/qjs_window.cc
     out/qjs_location.cc
     out/qjs_blob.cc
+    out/qjs_array_buffer.cc
     out/qjs_event.cc
     out/qjs_add_event_listener_options.cc
     out/qjs_event_listener_options.cc

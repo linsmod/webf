@@ -48,6 +48,8 @@ build/
 *~
 *.swp
 
+**/vendor/** 
+
 # NDK
 obj/
 yarn.lock

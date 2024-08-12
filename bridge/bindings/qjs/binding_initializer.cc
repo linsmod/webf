@@ -8,6 +8,7 @@
 
 #include "qjs_animation_event.h"
 #include "qjs_blob.h"
+#include "qjs_array_buffer.h"
 #include "qjs_bounding_client_rect.h"
 #include "qjs_canvas_gradient.h"
 #include "qjs_canvas_pattern.h"
@@ -199,6 +200,8 @@ void InstallBindings(ExecutingContext* context) {
   QJSSVGEllipseElement::Install(context);
   QJSSVGStyleElement::Install(context);
   QJSSVGLineElement::Install(context);
+
+  QJSArrayBuffer::Install(context);
 
   // Legacy bindings, not standard.
   QJSElementAttributes::Install(context);
