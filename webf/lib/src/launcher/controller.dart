@@ -191,7 +191,7 @@ class WebFViewController implements WidgetsBindingObserver {
       debugDefaultTargetPlatformOverride = TargetPlatform.fuchsia;
       debugPaintSizeEnabled = true;
     }
-    BindingBridge.setup();
+
     _contextId = await initBridge(this, runningThread);
 
     _setupObserver();
@@ -852,6 +852,9 @@ class WebFViewController implements WidgetsBindingObserver {
   @override
   void handleUpdateBackGestureProgress(backEvent) {
   }
+
+  @override
+  void didChangeViewFocus(event) {}
 }
 
 // An controller designed to control kraken's functional modules.
